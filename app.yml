@@ -23,7 +23,7 @@ default_events:
   # - fork
   # - gollum
   # - issue_comment
-  - issues
+  # - issues
 # - label
 # - milestone
 # - member
@@ -35,7 +35,7 @@ default_events:
 # - project_card
 # - project_column
 # - public
-# - pull_request
+  - pull_request
 # - pull_request_review
 # - pull_request_review_comment
 # - push
@@ -70,7 +70,7 @@ default_permissions:
 
   # Issues and related comments, assignees, labels, and milestones.
   # https://developer.github.com/v3/apps/permissions/#permission-on-issues
-  issues: write
+  # issues: write
 
   # Search repositories, list collaborators, and access repository metadata.
   # https://developer.github.com/v3/apps/permissions/#metadata-permissions
@@ -78,11 +78,11 @@ default_permissions:
 
   # Retrieve Pages statuses, configuration, and builds, as well as create new builds.
   # https://developer.github.com/v3/apps/permissions/#permission-on-pages
-  # pages: read
+  pages: read
 
   # Pull requests and related comments, assignees, labels, milestones, and merges.
   # https://developer.github.com/v3/apps/permissions/#permission-on-pull-requests
-  # pull_requests: read
+  pull_requests: write
 
   # Manage the post-receive hooks for a repository.
   # https://developer.github.com/v3/apps/permissions/#permission-on-repository-hooks
@@ -130,8 +130,8 @@ default_permissions:
 # url: https://example.com/
 
 # A description of the GitHub App.
-# description: A description of my awesome app
+description: A silly pull request bot!
 
 # Set to true when your GitHub App is available to the public or false when it is only accessible to the owner of the app.
 # Default: true
-# public: false
+public: true
